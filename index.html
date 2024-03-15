@@ -1,67 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slot Machine</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f3f3f3;
-    }
-    .slot-machine {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-    }
-    .reel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      border: 2px solid #333;
-      margin: 10px;
-      font-size: 2em;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 1em;
-      margin-top: 20px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script defer src="scripts/script.js"></script>
+    <link rel="icon" type="images/x-icon" href="images/favicon.jpg">
+
+    <!-- Font: Ma Shan Zheng -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
+    <!-- Font: Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ma+Shan+Zheng&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
+    <header>
+        <nav class="lora">
+            <div>
+                <h1 class="msz-regular large">鲁迅先生</h1>
+                <h1 class="lora-bold small">Mr. Lu Xun</h1>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="influence.html">Influence</a>
+        </nav>
+    </header>
+    <main class="background-p1">
+        <div class="title-container">
+            <div class="lora-bold">
+                <h2> THE MAN WHO<br>SHAPED MODERN<br>CHINESE CULTURE</h2>
+                <p>&nbsp;</p>
+                <p>And who still have huge influence over it</p>
+                <h2>-</h2>
+                <p>&nbsp;</p>
+                <img src="images/lu_xun_signature.png" alt="lu xun's signature" width="20%" height="auto">
+                <h2>&nbsp;</h2>
+                <h1>LU XUN</h1>
+            </div>
+        </div>
+        <div class="grid-p1">
+            <img src="images/scroll_background.png" class="p1-bg1" alt="scroll background" width="100%">
+            <img src="images/luxun_youth.jpg" class="p1-img1 boxshadowup" alt="lu xun in his youth" height="70%" width="auto">
+            <div class="p1-text1">
+                <h1 class="lora-bold large">Early Life</h1>
+                <p>&nbsp;</p>
+                <p class="lora"> Lu Xun, born Zhou Shuren on September 25, 1881, in Shaoxing, Zhejiang Province, China,
+                    was a prominent Chinese writer, essayist, and critic. His early life was marked by several key
+                    events that would greatly influence his later works and political views.<br> Lu Xun was born into a
+                    family of relatively modest means. His father, Zhou Boyi, was a scholar-official who had failed the
+                    imperial examinations and worked as a minor official. His mother, Zhu Rui, came from a scholarly
+                    family. Lu Xun was the third of four brothers.<br> Lu Xun received a traditional Confucian education
+                    during his childhood, which was typical for a boy of his social background. However, his education
+                    was disrupted by family financial difficulties and his father's early death when Lu Xun was only 14
+                    years old.<br>Lu Xun's father's death and his family's subsequent struggles had a profound impact on
+                    him. These experiences instilled in him a sense of disillusionment with traditional Confucian values
+                    and the social injustices he witnessed, themes that would recur in his later writings.</p>
 
-<div class="slot-machine">
-  <div class="reel" id="reel1">0</div>
-  <div class="reel" id="reel2">0</div>
-  <div class="reel" id="reel3">0</div>
-  <button onclick="spin()">Spin</button>
-</div>
-
-<script>
-  function spin() {
-    const reels = document.querySelectorAll('.reel');
-    reels.forEach(reel => {
-      const randomValue = Math.floor(Math.random() * 10); // Change 10 to adjust the range of values
-      reel.textContent = randomValue;
-    });
-    checkWin();
-  }
-
-  function checkWin() {
-    const reels = document.querySelectorAll('.reel');
-    const values = Array.from(reels).map(reel => reel.textContent);
-    if (values.every(val => val === values[0])) {
-      alert("Congratulations! You've won!");
-    }
-  }
-</script>
-
+            </div>
+            <img src="images/execution_scene.jpg" class="p1-img2 boxshadowup" alt="execution during the russo-japanese war"
+                height="70%" width="auto">
+            <div class="p1-text2">
+                <h1 class="lora-bold large">Study Abroad</h1>
+                <p>&nbsp;</p>
+                <p class="lora">In 1902, Lu Xun traveled to Japan to study medicine, following in the footsteps of his
+                    older brother. However, he soon became disillusioned with the field and abandoned his medical
+                    studies. Instead, he immersed himself in the study of literature, philosophy, and Western ideas,
+                    which would shape his intellectual outlook and literary style.<br>While Lu Xun was attending medical
+                    school, the Russo-Japanese War (1904–1905) broke out. Part of the war was fought on disputed Chinese
+                    land. While the war was being fought it became common for lecturers to show slides of pictures from
+                    the war to their students after their classes had ended. After one of his biology classes Lu was
+                    shown a scene in which a Japanese soldier was about to behead a Chinese man who had allegedly spied
+                    for the Russians, surrounded by Chinese who were apathetic to the scene. In his preface to Nahan,
+                    the first collection of his short stories, Lu explained how viewing this scene influenced him to
+                    quit studying Western medicine, and to become a literary physician to what he perceived to be
+                    China's spiritual problems instead.<br> During his time in Japan, Lu Xun was also exposed to a wide
+                    range
+                    of progressive and revolutionary ideas, including Marxism, anarchism, and Darwinism. This exposure
+                    contributed to his growing sense of social consciousness and his critique of traditional Chinese
+                    society.</p>
+            </div>
+            <img src="images/scroll_background.png" class="p1-bg3" alt="scroll background 2" width="100%">
+            <img src="images/diary_of_a_madman.jpg" class="p1-img3 boxshadowup"
+                alt="picture of a diary of a madman in lu xun museum in Beijing" height="70%" width="auto">
+            <div class="p1-text3">
+                <h1 class="lora-bold large">Early Career</h1>
+                <p>&nbsp;</p>
+                <p class="lora">Lu Xun's literary career began in 1918 when he published his first short story, "Diary
+                    of a Madman" (Kuangren riji), which is considered a groundbreaking work in modern Chinese
+                    literature. The story, written in vernacular Chinese, critiques traditional Confucian values and
+                    addresses themes of alienation and mental illness.<br> Following the success of "Diary of a Madman,"
+                    Lu Xun continued to produce a series of influential works, including short stories, essays, and
+                    translations. His writings often focused on social criticism, political satire, and the plight of
+                    the common people in China.<br>Lu Xun was deeply engaged in the cultural and political debates of
+                    his time. He was a vocal critic of the traditional Confucian order, as well as the social and
+                    political problems plaguing China, such as corruption, imperialism, and inequality. He used his
+                    writings as a platform to advocate for social change and reform.</p>
+            </div>
+            <img src="images/lu_xun_family.jpg" class="p1-img4 boxshadowup" alt="family photo of the Lu's and the Feng's"
+                height="70%" width="auto">
+            <div class="p1-text4">
+                <h1 class="lora-bold large">Later Life</h1>
+                <p>&nbsp;</p>
+                <p class="lora">Throughout his later life, Lu Xun continued to write prolifically, producing a wide
+                    range of works, including short stories, essays, prose poetry, and translations. His later writings
+                    often delved deeper into themes such as the struggle for social justice, the impact of modernity on
+                    Chinese society, and the search for identity in a rapidly changing world.<br>Throughout his later
+                    life, Lu Xun continued to write prolifically, producing a wide range of works, including short
+                    stories, essays, prose poetry, and translations. His later writings often delved deeper into themes
+                    such as the struggle for social justice, the impact of modernity on Chinese society, and the search
+                    for identity in a rapidly changing world.<br> In his later years, Lu Xun suffered from deteriorating
+                    health, including bouts of tuberculosis. Despite his illness, he continued to write and participate
+                    in intellectual and cultural activities. He passed away on October 19, 1936, at the age of 55,
+                    leaving behind a rich legacy of literary works and a profound influence on Chinese literature and
+                    intellectual thought.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1 class="msz-regular large">鲁迅先生</h1>
+    </footer>
 </body>
-</html>
 
+</html>
