@@ -1,0 +1,626 @@
+nav {
+    display: block;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+    
+nav div {
+    padding: 20px;
+}
+    
+nav h1 {
+    padding: 5px;
+}
+    
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: background-color 0.25s;
+}
+    
+nav a:hover {
+    background-color: rgb(184, 184, 184);
+}
+    
+nav a:visited {
+    color: black;
+}
+    
+.large {
+    font-size: 150%;
+}
+
+.small {
+    font-size: 75%;
+}
+
+.centered {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lora-bold {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.msz-regular {
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Title page */
+.title-container {
+    width: 100%;
+    height: 768px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("background_images/index_background_1.png");
+}
+
+.title-container div h2 {
+    font-size: 300%;
+}
+
+.title-container div h1 {
+    font-size: 400%;
+    color: white;
+}
+
+.title-container div p {
+    font-size: 125%;
+}
+
+.title-container div {
+    padding: 50px;
+    line-height: 1.25;
+    color: rgb(229, 203, 6);
+    text-align: center;
+}
+
+/* Grid first page */
+.background-p1 {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url("background_images/index_background_2.png");
+    background-attachment: fixed;
+}
+
+.boxshadowup {
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.grid-p1 {
+    display: grid;
+    grid-template-rows: 300px auto 300px auto 300px auto 300px auto;
+    grid-template-areas:
+        "imageA" 
+        "textA"
+        "imageB"
+        "textB"
+        "imageC"
+        "textC"
+        "imageD"
+        "textD"
+        ;
+}
+
+.grid-p1 p {
+    line-height: 1.25;
+    font-size: .75rem;
+}
+
+.p1-img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    grid-area: imageA;
+    place-self: center;
+}
+
+.p1-text1 {
+    grid-area: textA;
+    padding: 60px;
+}
+
+.p1-bg1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    place-self: stretch;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p1-img2 {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    grid-area: imageB;
+    place-self: center;
+}
+
+.p1-text2 {
+    grid-area: textB;
+    padding: 60px;
+    color: white;
+}
+
+.p1-img3 {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    grid-area: imageC;
+    place-self: center;
+}
+
+.p1-text3 {
+    grid-area: textC;
+    padding: 60px;
+}
+
+.p1-bg3 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    place-self: stretch;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p1-img4 {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    grid-area: imageD;
+    place-self: center;
+}
+
+.p1-text4 {
+    grid-area: textD;
+    padding: 60px;
+    color: white;
+}
+
+footer {
+    background-color: white;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Background page 2 */
+
+.background-p2 {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url("background_images/paper_background.jpg");
+    background-attachment: fixed;
+}
+
+/* Grid page 2 */
+
+.bookcontainer {
+    position: relative;
+}
+
+.bookcontainer p {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.hideimg {
+    opacity: 0;
+}
+
+.grid-p2 {
+    display: grid;
+    margin: 50px 50px;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-areas: 
+    "bookA"
+    "bookB"
+    "bookC"
+    "bookD"
+    ;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+
+.grid-p2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: filter 0.25s, opacity 0.25s;
+}
+
+.grid-p2 img:hover {
+    filter: brightness(50%);
+}
+
+.grid-p2 p {
+    z-index: -1;
+    background-color: rgb(15, 50, 99);
+    padding: 20px;
+    line-height: 1.5;
+    color:white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.book1 {
+    grid-area: bookA;
+}
+
+.book2 {
+    grid-area: bookB;
+}
+
+.book3 {
+    grid-area: bookC;
+}
+
+.book4 {
+    grid-area: bookD;
+}
+
+
+/* Grid page 3 */
+
+/* MOBILE SETTINGS */
+.grid-p3 {
+    display: grid;
+    margin: 0px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 470px 470px 470px 470px;
+    grid-template-areas: 
+    "textA imgA"
+    "imgB textB"
+    "textC imgC"
+    "imgD textD"
+    ;
+}
+
+.grid-p3 div{
+    padding: 15px;
+    color:white;
+    line-height: 1.25;
+    font-size: 12px;
+}
+
+.grid-p3 div:nth-of-type(even) {
+    background-color: wheat;
+    color: black;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.grid-p3 img {
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+}
+
+.grid-p3 img:nth-of-type(even) {
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p3-text1 {
+    grid-area: textA;
+}
+
+.p3-img1 {
+    grid-area: imgA;
+}
+
+.p3-text2 {
+    grid-area: textB;
+}
+
+.p3-img2 {
+    grid-area: imgB;
+}
+
+.p3-text3 {
+    grid-area: textC;
+}
+
+.p3-img3 {
+    grid-area: imgC;
+}
+
+.p3-text4 {
+    grid-area: textD;
+}
+
+.p3-img4 {
+    grid-area: imgD;
+}
+
+/* Tablet Screen Size */
+
+@media only screen and (min-width: 768px) {
+    /* Grid page 1 */
+
+    .grid-p1 {
+        display: grid;
+        grid-template-rows: 400px auto 400px auto 400px auto 400px auto;
+        grid-template-areas:
+            "imageA" 
+            "textA"
+            "imageB"
+            "textB"
+            "imageC"
+            "textC"
+            "imageD"
+            "textD"
+            ;
+    }
+
+    .grid-p1 p {
+        line-height: 1.25;
+        font-size: .75rem;
+    }
+    
+    .p1-img1 {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        grid-area: imageA;
+        place-self: center;
+    }
+    
+    .p1-text1 {
+        grid-area: textA;
+        padding: 60px;
+    }
+    
+    .p1-bg1{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        place-self: stretch;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .p1-img2 {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        grid-area: imageB;
+        place-self: center;
+    }
+    
+    .p1-text2 {
+        grid-area: textB;
+        padding: 60px;
+        color: white;
+    }
+    
+    .p1-img3 {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        grid-area: imageC;
+        place-self: center;
+    }
+    
+    .p1-text3 {
+        grid-area: textC;
+        padding: 60px;
+    }
+    
+    .p1-bg3 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        place-self: stretch;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .p1-img4 {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        grid-area: imageD;
+        place-self: center;
+    }
+    
+    .p1-text4 {
+        grid-area: textD;
+        padding: 60px;
+        color: white;
+    }
+
+    /* Grid page 2 */
+
+    .grid-p2{
+        display: grid;
+        margin: 50px 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px;
+        grid-template-areas: 
+        "bookA bookB"
+        "bookC bookD"
+        ;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+
+    .grid-p3 {
+        display: grid;
+        margin: 0px 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 550px 550px 550px 550px;
+        grid-template-areas: 
+        "textA imgA"
+        "imgB textB"
+        "textC imgC"
+        "imgD textD"
+        ;
+    }
+
+    .grid-p3 div{
+        padding: 40px;
+        color:white;
+        line-height: 1.25;
+        font-size: 1rem;
+    }
+
+}
+
+/* Laptop Size (assuming everyone has a large laptop which is what I have) */
+
+@media only screen and (min-width: 1440px) {
+    /* Grid page 1 */
+
+    .boxshadowup {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .grid-p1 {
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: 100px 1fr 1fr 1fr 100px;
+        grid-template-areas:
+            ". imageA textA textA ."
+            ". textB textB imageB ."
+            ". imageC textC textC ."
+            ". textD textD imageD ."
+            ;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .p1-img1 {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        grid-area: imageA;
+        place-self: center;
+    }
+
+    .grid-p1 p {
+        line-height: 1.25;
+        font-size: 1rem;
+    }
+
+    .p1-bg1{
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .p1-img2 {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        grid-area: imageB;
+        place-self: center;
+    }
+    
+    .p1-text2 {
+        grid-area: textB;
+        padding: 60px;
+        color: white;
+    }
+    
+    .p1-img3 {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        grid-area: imageC;
+        place-self: center;
+    }
+    
+    .p1-text3 {
+        grid-area: textC;
+        padding: 60px;
+    }
+    
+    .p1-bg3 {
+        grid-column: 1 / 6;
+        grid-row: 3 / 4;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .p1-img4 {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        grid-area: imageD;
+        place-self: center;
+    }
+    
+    .p1-text4 {
+        grid-area: textD;
+        padding: 60px;
+        color: white;
+    }
+
+    /* Grid page 2 */
+
+    .grid-p2{
+        display: grid;
+        margin: 50px 75px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 450px;
+        grid-template-areas: 
+        "bookA bookB bookC bookD"
+        ;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+
+    /* Grid page 3 */
+    .grid-p3 {
+        display: grid;
+        margin: 100px 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px 350px;
+        grid-template-areas: 
+        "textA imgA"
+        "imgB textB"
+        "textC imgC"
+        "imgD textD"
+        ;
+    }
+
+    .grid-p3 div{
+        padding: 40px;
+        color:white;
+        line-height: 1.25;
+        font-size: 1rem;
+    }
+
+    .grid-p3 div:nth-of-type(even) {
+        background-color: wheat;
+        color: black;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+        border: 10px solid wheat;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
